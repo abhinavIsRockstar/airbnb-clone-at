@@ -1,0 +1,121 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+.logoLogInSvg{
+    width: 20%;
+}
+
+.logoAirbnbSvg{
+    width: 13%;
+}
+#main-menu-container{
+    background: #FFFFFF;
+    padding-left: 168px;
+    padding-right: 24px;
+    display: none;
+    position: fixed;
+    bottom: 0px;
+    border: 1px solid #EBEBEB;
+}
+
+#icon-container{
+    display: flex;
+    width: 70%;
+    /* background: gray; */
+    cursor: pointer;
+}
+
+#menu-airbnb-logo{
+    width: 33%;
+    /* margin-right: 53px; */
+    /* background: orange; */
+    text-align: end;
+    text-align: center;
+    /* margin-right: 20px; */
+}
+
+#logo_definition{
+    margin-top: 7px;
+}
+
+.airbnb-logo-container{
+    margin-top: 18px;
+    margin-right: 6px;
+}
+
+.favorite-container{
+    margin-top: 18px;
+}
+
+#favourite-definition{
+    margin-top: 8px;
+}
+
+.logIn-container{
+    margin-top: 15px;
+}
+
+#logIn-defintion{
+    margin-top: 4px;
+}
+.logofavoriteSvg{
+    width: 15%;
+}
+
+#menu-favorite-logo{
+    width: 30%;
+    /* background: red; */
+    text-align: center;
+    /* margin-right: 20px; */
+}
+
+#logofavoriteSvg{
+    width: 50%;
+}
+
+#menu-log-in-logo{
+    width: 30%;
+    /* background: brown; */
+    text-align: center;
+    /* margin-right: 20px; */
+}
+
+
+
+
+@media screen and (max-width: 745px) {
+
+    #main-menu-container{
+        display: none;
+        position: fixed;
+        bottom: 0px;
+    }
+
+    .footer-terms-and-conditions > hover{
+        display: none;
+    }
+}
+
+@media only screen and (max-width:420px) {
+
+    #main-menu-container{
+        display: none;
+        position: fixed;
+        bottom: 0px;
+    }
+
+    .logoLogInSvg{
+        width: 61%;
+    }
+    .logofavoriteSvg{
+        width: 40%;
+    }
+    .logoAirbnbSvg{
+        width: 43%;
+    }
+
+}
+

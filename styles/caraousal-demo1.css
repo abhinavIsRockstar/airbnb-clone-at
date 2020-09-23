@@ -1,0 +1,75 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    background-color: #ffffff;
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,
+    "Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+
+#container{
+    background: gray;
+    display: flex;
+    overflow: hidden;
+}
+
+#prev-button{
+    width: 15%;
+    cursor: pointer;
+    z-index: 1;
+}
+
+#next-button{
+    text-align: end;
+    cursor: pointer;
+    margin-left: 800px;
+    position: absolute;
+}
+.image-slider{
+    position: absolute;
+    background: purple;
+    /* animation-name: slide;
+    animation-duration: 4s; */
+    display: flex;
+    /* transform: translateX(-800px);
+    transition: transform 3s; */
+
+}
+#carousal-container{
+    background: pink;
+    /* position: absolute; */
+    width: 65%;
+    display: flex;
+    height: 428px;
+    /*   */
+    
+    overflow: hidden;
+    /* animation-name: slide;
+    animation-duration: 2s;
+    animation-iteration-count: 2; */
+}
+
+.image-slide{
+    /* position: absolute; */
+}
+
+@keyframes slide {
+
+    100% {
+        /* transform: translateX(-200px); */
+        margin-left: -1400px;
+        display: block;
+    }
+}
+
+@keyframes slide1 {
+    100%{
+        transform: translateX(-1400px);
+    }
+}
+
+@keyframes slide2 {
+    100%{
+        transform: translateX(-1500px);
+    }
+}

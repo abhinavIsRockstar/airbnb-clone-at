@@ -1,0 +1,52 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    background: gray;
+    background-color: #ffffff;
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,
+    "Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+
+#dropdown-container{
+    padding: 20px 0 0 51px;
+}
+
+.paragraph-container{
+    /* background: brown; */
+    width: 70%;
+    cursor: pointer;
+    margin-bottom: 60px;
+    border-bottom: 1px solid gray;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.paragraph-heading{
+    width: 70%;
+}
+
+.paragraph-container:hover {
+
+   /* background: green; */
+}
+
+.button_def{
+    display: none;
+    transition: display 1s;
+}
+
+#moon{
+    width: 5px;
+    height: 10px;
+    background: gray;
+}
+
+.button_def_toggle{
+    background: white;
+    border: 0px;
+    margin-bottom: 12px;
+    margin-top: 19px;
+    text-align: left;
+    
+}

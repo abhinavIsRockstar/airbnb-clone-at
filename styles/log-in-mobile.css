@@ -1,0 +1,171 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    background-color: #ffffff;
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,
+    "Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+
+#log-in-container{
+    display: block;
+    background: #fefefe;
+    position: absolute;
+    width: 85%;
+    max-width: 568px;
+    margin-top: 7%;
+    padding-left: 20px;
+    padding-top: 25px;
+    border: 1px solid rgb(228,228,228);
+    border-radius: 14px;
+    text-align: initial;
+    margin-left: 5%;
+    
+}
+
+#log-in-header{
+  margin-bottom: 25px;
+}
+
+#container-main{
+    height: 513px;
+    overflow: auto;
+    /* margin-bottom: -8px; */
+    margin-top: -8px;
+}
+
+#close-button{
+    position: relative;
+    cursor: pointer;
+  }
+  
+  
+  #first-cross{
+    position: absolute;
+    width: 15px;
+    height: 2px;
+    transform: rotate(135deg);
+    background: black
+  }
+  
+  #second-cross{
+    position: absolute;
+    width: 15px;
+    height: 2px;
+    top: 0px;
+    transform: rotate(45deg);
+    background: black
+  }
+
+  #log-in-heading{
+      font-size: 16px;
+      font-weight: 600;
+      text-align: center;
+      color: rgb(72,72,72);
+  }
+
+  #input-container{
+    margin-top: 25px;
+  }
+
+  #continue-button{
+    background-image: radial-gradient(circle at center center, rgb(255, 56, 92) 0%,
+     rgb(230, 30, 77) 27.5%, rgb(227, 28, 95) 40%,
+     rgb(215, 4, 102) 57.5%, rgb(189, 30, 89) 75%, rgb(189, 30, 89) 100%);
+    font-size: 16px;
+    font-weight: 600;
+    width: 92%;
+    height: 38px;
+    text-align: center;
+    padding-top: 6px;
+    border-radius: 8px;
+}
+  
+
+  #terms{
+      font-size: 10px;
+      font-weight: 100;
+      color: #AAAAAA;
+  }
+
+  #input-value{
+    background: #fefefe;
+    width: 92%;
+    height: 45px;
+    /* border-radius: 5px; */
+    padding-left: 10px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border: 1px solid rgb(176, 176, 176);
+  }
+
+  #phone-number-logIn{
+    background: #fefefe;
+    width: 92%;
+    height: 45px;
+    /* border-radius: 5px; */
+    padding-left: 10px;
+    border-left: none;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px; 
+    border: 1px solid rgb(176, 176, 176);
+  }
+
+  #country-heading{
+      font-size: 12px;
+      font-weight: 400;
+      color: gray;
+  }
+
+  #selected-country{
+      font-size: 15px;
+      font-weight: 100;
+      margin-top: 6px;
+      color: gray;
+  }
+
+  .social-buttons{
+    background: #fefefe;
+    width: 92%;
+    height: 38px;
+    text-align: center;
+    padding-top: 6px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    border: 2px solid rgb(176, 176, 176);
+    color: rgb(72,72,72);
+  }
+
+  .social-buttons:hover,
+  .social-buttons:focus{
+    border: 2px solid rgb(0, 0, 0);;
+  }
+
+  #sign-up{
+      font-size: 12px;
+      font-weight: 400;
+      color: rgb(72,72,72);
+
+  }
+
+  #sign-up-anchor{
+      color: rgb(72,72,72);
+      text-decoration: underline;
+      font-size: 12px;
+    font-weight: 600;
+  }
+
+  .or-text{
+    text-align: center;
+    margin-right: 33px;
+  }
+
+  @media  only screen and (max-width:420px){
+
+  }
+  
+
+  

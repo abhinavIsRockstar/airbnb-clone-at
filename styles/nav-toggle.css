@@ -1,0 +1,99 @@
+#navigation-container {
+    animation-name: bottom;       
+    animation-duration: 1s;
+    display: none;
+}
+
+#navigation-toggle{
+    background: #ffffff;
+    /* transition: 5s; */
+    /* display: none;  */
+    /* transition: 4s ease-in; */
+    /* animation-name: bottom;       
+    animation-duration: 1s; */
+    /* transform: translateY(-100%); */
+    /* position: relative;  */
+    
+}
+
+ @keyframes bottom{ 
+    from{
+         transform: translateY(-100%);
+        } 
+    to{
+         transform: translateY(-0%);
+        }
+} 
+
+
+.logoSvg{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 15px;
+    margin-left: 30px;
+    pointer-events: none;
+    cursor: none;
+}
+
+.language-svg{
+    margin-left: 94%;
+    margin-top: -9px;
+}
+.logoSvgToggle{
+    width: 30px;
+    height: 30px;   
+}
+
+.navigation-toggle-container{
+    font-size: 15px;
+    text-decoration: none;
+    font-family: Circular, -apple-system,
+    BlinkMacSystemFont, 
+    Roboto, Helvetica Neue, sans-serif;
+    font-weight: normal;
+    /* background: black; */
+    padding-top: 41px;
+    padding-left: 17px;
+    list-style: none;
+    /* position: absolute; */
+  
+}
+
+.navigation-item{
+    text-decoration: none;
+    color: rgb(72, 72, 72);
+}
+
+.coloumn-first,
+.coloumn-second,
+.coloumn-third,
+.coloumn-fourth,
+.coloumn-fifth{
+    margin: 19px 0;
+}
+
+.item{
+    padding-bottom: 23px;
+}
+
+.item-description{
+    font-size: 14px;
+}
+@media only screen and (max-width: 1020px) {
+    
+    .logoSvg{
+        cursor: pointer;
+        pointer-events: all;
+    }
+}
+
+@media only screen and (max-width: 820px){
+
+    .logoSvg{
+        cursor: pointer;
+        pointer-events: all;
+    }
+    
+}
+

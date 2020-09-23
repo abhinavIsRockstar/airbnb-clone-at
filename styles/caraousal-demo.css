@@ -1,0 +1,112 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,
+    "Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    font-size: 14px;
+}
+
+#heading-container{
+    text-align: center;
+    margin: 0 auto;
+    background: orange;
+}
+
+#caraousal-container{
+    background: gray;
+    padding-top: 16%;
+    position: relative;
+}
+
+.caraousal-viewport{
+    display: flex;
+    position: relative;
+    background: red;
+    width: 87%;
+    margin-left: 35px;
+}
+
+#prev-icon{
+    cursor: pointer;
+    padding-top: 30px;
+    position: absolute;
+    z-index: 1;
+    margin-left: 109px;
+}
+
+#next-icon{
+    cursor: pointer;
+    padding-top: 50px;
+    position: relative;
+    margin-left: 87px;
+    top: -18px;
+    
+}
+
+.image-item{
+    width: 100%;
+}
+
+#navigation-slide{
+    display: flex;
+    justify-content: center;
+
+}
+
+.navigation-caraousal-list{
+    /* display: inline-block; */
+    /* display: flex; */
+    list-style: none;
+    display: block ruby;
+}
+.caraousal-navigation-button{
+    width: 18px;
+    height: 3px;
+    background: black;
+    display: inline-block;
+    margin-left: 14px;
+}
+
+.slide-image-list{
+    display: flex;
+    list-style: none;
+    overflow: hidden;
+}
+
+#image-slide-container{
+    position: relative;
+    width: 60%;
+    background: pink;
+    margin-left: 186px;
+    right: 0;
+    transition: right 2s;
+    /* animation-name: leftTransition;
+    animation-duration: 6s;
+    animation-delay: .5s;
+    animation-iteration-count: 2; */
+}
+.slide-image-item{
+    width: 100%;
+    right: 0;
+    
+}
+.image-container{
+    right: 0;
+    transition: right 2s;
+    position: relative;
+}
+
+@keyframes leftTransition  {
+     0% {
+        right: 100%;
+    }
+
+     50% {
+        right: 50%;
+    } 
+
+    100%{
+        right: 0%;
+    } 
+}
