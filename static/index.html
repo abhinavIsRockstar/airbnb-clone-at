@@ -1,0 +1,1904 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/styles/style.css">
+    <link rel="stylesheet" href="/public/styles/guest_toggle_style.css">
+    <link rel="stylesheet" href="/public/styles/nav-toggle.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+     rel="stylesheet">
+     <link rel="stylesheet" href="/public/styles/menu_bottom.css">
+     <link rel="stylesheet" href="/public/styles/languages.css">
+     <link rel="stylesheet" href="/public/styles/currency.css">
+     <link rel="stylesheet" href="/public/styles/sign-up.css">
+     <link rel="stylesheet" href="/public/styles/log_in.css">
+     <link rel="stylesheet" href="/public/styles/help.css">
+     <link rel="stylesheet" href="/public/styles/dropdown-menu.css">
+     <title>Holiday Lets, Homes, Experiences & Places - Airbnb | Clone</title>
+</head>
+<body id="body-container">
+   <!-- for toggle navigation -->
+
+   
+    <div id="navigation-container">
+        
+    <div id="navigation-toggle">
+
+    <div class="navigation-toggle-logo">
+        
+    </div>
+    <ul class="navigation-toggle-container">
+        
+        <li class="coloumn-first">
+           <a href="#" class="navigation-item">
+               <div class="item">Home</div>
+           </a>
+        </li>
+
+        <hr>
+
+        <li class="coloumn-second">
+            <a href="#"class="navigation-item">
+                <div class="item">Invite Friends</div>
+            </a>
+
+            <a href="#"class="navigation-item">
+                <div class="item">Refer Hosts</div>
+            </a>
+
+            <a href="#"class="navigation-item">
+                <div class="item">Airbnb for work</div>
+            </a>
+
+        </li>
+        <hr>
+
+        <li class="coloumn-third">
+
+            <a href="#"class="navigation-item">
+                <div class="item">Language
+                    <div class="item-description">English</div>
+                </div>
+               
+               
+            </a>
+            <a href="#"class="navigation-item">
+                <div class="item">Currency
+                    <div class="item-description">INR</div>
+                </div>
+            </a>
+            <div class="language-svg">
+                <img src="/public//images/svgImages/airbnb-1.svg" alt="" class="logoSvgToggle">
+            </div>
+            
+        </li>
+        <hr>
+
+        <li class="coloumn-fourth">
+
+            <a href="#"class="navigation-item">
+                <div class="item">List Your Place
+                    <div class="item-description"> <strong> Earn upto ₹35,600 </strong></div>
+                </div>
+                
+            </a>
+
+            <a href="#"class="navigation-item">
+                <div class="item">Learn about hosting your home</div>
+            </a>
+
+            <a href="#"class="navigation-item">
+                <div class="item">Host an experience
+                    <div class="item-description">Earn money doing what you love</div>
+                </div>
+                
+            </a>
+
+        </li>
+        
+        <hr>
+
+        <li class="coloumn-fifth">
+
+            <a href="#"class="navigation-item">
+                <div class="item">Help</div>
+            </a>
+
+            <a href="/links/sign_up.html"class="navigation-item">
+                <div class="item">Sign Up</div>
+            </a>
+
+            <a href="/links/log-in.html"class="navigation-item">
+                <div class="item">Log in</div>
+            </a>
+        </li>
+
+        
+
+    </ul>
+
+   
+
+    </div>
+    </div>
+    
+    <div>
+    <img src="/public/images/svgImages/airbnb-1.svg" alt="" 
+              class="logoSvg" onclick="navToggle()">
+            </div>
+
+
+  
+
+    <div class="container" id="main-container">  
+            <!-- <img src="191112135743-04-airbnb-royal-castle-india-full-169.jpg" alt="">   -->
+        <header class="nav-bar" id="nav_bar">
+
+            <div class="navigation-list-items-logo">
+            <!-- <svg width="100" height="100">
+                <circle cx="50" cy="50" r="20" stroke="green" stroke-width="2" fill="skyblue" />
+              </svg> -->
+              
+    
+            
+            </div> 
+            
+            
+    
+    
+              <div class="navigation-list-items">
+                 <ul class="list-items">
+                <li class="list-item" onclick="languagePopUp()">English(IN)
+                    
+                   
+                </li>
+                <li class="list-item" onclick="currency_popUp()"> ₹ INR
+
+                 
+                
+                </li>
+                <li class="list-item">Host a Home</li>
+                <li class="list-item">Host an experience</li>
+                <li class="list-item" onclick="help()">Help
+                    
+                    
+
+                </li>
+                <li class="list-item" onclick="signUp()">Sign Up
+                
+                   
+
+                </li>
+                <li class="list-item" onclick="logIn()">Log in
+                    
+                    
+                </li>
+                </ul>
+
+                <!-- for language pop up -->
+
+                <div id="container-languages">
+                    <header class="language-header">
+                        <!-- <div class="close-container">
+                            <div class="close">
+                                
+                            </div>
+                        </div> -->
+
+                        <div id="close-button-language">
+        
+                            <div id="first-cross-language"></div>
+                            <div id="second-cross-language"></div>
+                
+                          </div>
+
+                    </header>
+            
+                    <hr class="container-language-horizontal">
+                <div class="language-container" >
+                   
+            
+                   <div class="suggested-languages-and-regions">
+                       <div class="languages-heading">Suggested languages and regions</div>
+                       <div class="languages-section">
+            
+                           <div class="language">
+                               <p class="language-specific">English</p>
+                               <p class="language-nation">United States</p>
+                           </div>
+            
+                           <div class="language">
+                            <p class="language-specific">English</p>
+                            <p class="language-nation">United Kingdom</p>
+                        </div>
+            
+                        <div class="language">
+                            <p class="language-specific">Hindi</p>
+                            <p class="language-nation">India</p>
+                        </div>
+            
+                       </div>
+                   </div>
+            
+                   <div class="choose-language-regions">
+                       <div class="choose-language-regions-heading"> 
+                           <p> Choose a language and region</p>
+                        </div>
+                       <div class="choose-language-regions-section">
+            
+                           <div class="choose-language-main">
+                            <p class="choose-language-regions-main">Hindi</p>
+                            <p class="language-nation-main">India</p>
+                           </div>
+            
+                           <div class="choose-language-main">
+                            <p class="choose-language-regions-main">Hindi</p>
+                            <p class="language-nation-main">India</p>
+                           </div>
+            
+                           <div class="choose-language-main">
+                            <p class="choose-language-regions-main">Hindi</p>
+                            <p class="language-nation-main">India</p>
+                           </div>
+            
+                           <div class="choose-language-main">
+                            <p class="choose-language-regions-main">Hindip
+                            <p class="language-nation-main">India</p>
+                           </div>
+            
+                           <div class="choose-language-main">
+                            <p class="choose-language-regions-main">Hindi</p>
+                            <p class="language-nation-main">India</p>
+                           </div>
+            
+                           <div class="choose-language-main">
+                            <p class="choose-language-regions-main">Bengali</p>
+                            <p class="language-nation-main">Bangladesh</p>
+                           </div>
+            
+                           <div class="choose-language-main">
+                            <p class="choose-language-regions-main">Urdu</p>
+                            <p class="language-nation-main">Pakistan</p>
+                           </div>
+            
+                           <div class="choose-language-main">
+                            <p class="choose-language-regions-main">Spanish</p>
+                            <p class="language-nation-main">Spain</p>
+                           </div>
+            
+                           <div class="choose-language-main">
+                            <p class="choose-language-regions-main">English</p>
+                            <p class="language-nation-main">United States</p>
+                           </div>
+            
+                           <div class="choose-language-main">
+                            <p class="choose-language-regions-main">Spanish</p>
+                            <p class="language-nation-main">Spain</p>
+                           </div>
+            
+            
+                           <div class="choose-language-main">
+                            <p class="choose-language-regions-main">Spanish</p>
+                            <p class="language-nation-main">Spain</p>
+                           </div>
+            
+            
+                           <div class="choose-language-main">
+                            <p class="choose-language-regions-main">Spanish</p>
+                            <p class="language-nation-main">Spain</p>
+                           </div>
+            
+                           <div class="choose-language-main">
+                            <p class="choose-language-regions-main">English</p>
+                            <p class="language-nation-main">United States</p>
+                           </div>
+            
+                           <div class="choose-language-main">
+                            <p class="choose-language-regions-main">English</p>
+                            <p class="language-nation-main">United States</p>
+                           </div>
+            
+                           <div class="choose-language-main">
+                            <p class="choose-language-regions-main">English</p>
+                            <p class="language-nation-main">United States</p>
+                           </div>
+            
+                           <div class="choose-language-main">
+                            <p class="choose-language-regions-main">English</p>
+                            <p class="language-nation-main">United States</p>
+                           </div>
+            
+                           <div class="choose-language-main">
+                            <p class="choose-language-regions-main">English</p>
+                            <p class="language-nation-main">United States</p>
+                           </div>
+            
+                           <div class="choose-language-main">
+                            <p class="choose-language-regions-main">English</p>
+                            <p class="language-nation-main">United States</p>
+                           </div>
+            
+                           <div class="choose-language-main">
+                            <p class="choose-language-regions-main">English</p>
+                            <p class="language-nation-main">United States</p>
+                           </div>
+            
+                           <div class="choose-language-main">
+                            <p class="choose-language-regions-main">English</p>
+                            <p class="language-nation-main">United States</p>
+                           </div>
+            
+                           <div class="choose-language-main">
+                            <p class="choose-language-regions-main">English</p>
+                            <p class="language-nation-main">United States</p>
+                           </div>
+            
+                           <div class="choose-language-main">
+                            <p class="choose-language-regions-main">English</p>
+                            <p class="language-nation-main">United States</p>
+                           </div>
+            
+                           <div class="choose-language-main">
+                            <p class="choose-language-regions-main">English</p>
+                            <p class="language-nation-main">United States</p>
+                           </div>
+            
+                           <div class="choose-language-main">
+                            <p class="choose-language-regions-main">English</p>
+                            <p class="language-nation-main">United States</p>
+                           </div>
+            
+                           <div class="choose-language-main">
+                            <p class="choose-language-regions-main">English</p>
+                            <p class="language-nation-main">United States</p>
+                           </div>
+            
+                           <div class="choose-language-main">
+                            <p class="choose-language-regions-main">English</p>
+                            <p class="language-nation-main">United States</p>
+                           </div>
+            
+                           <div class="choose-language-main">
+                            <p class="choose-language-regions-main">English</p>
+                            <p class="language-nation-main">United States</p>
+                           </div>
+            
+                           <div class="choose-language-main">
+                            <p class="choose-language-regions-main">English</p>
+                            <p class="language-nation-main">United States</p>
+                           </div>
+            
+                           <div class="choose-language-main">
+                            <p class="choose-language-regions-main">English</p>
+                            <p class="language-nation-main">United States</p>
+                           </div>
+            
+                           <div class="choose-language-main">
+                            <p class="choose-language-regions-main">English</p>
+                            <p class="language-nation-main">United States</p>
+                           </div>
+            
+                           <div class="choose-language-main">
+                            <p class="choose-language-regions-main">English</p>
+                            <p class="language-nation-main">United States</p>
+                           </div>
+            
+                           <div class="choose-language-main">
+                            <p class="choose-language-regions-main">English</p>
+                            <p class="language-nation-main">United States</p>
+                           </div>
+            
+                           <div class="choose-language-main">
+                            <p class="choose-language-regions-main">English</p>
+                            <p class="language-nation-main">United States</p>
+                           </div>
+            
+                           <div class="choose-language-main">
+                            <p class="choose-language-regions-main">English</p>
+                            <p class="language-nation-main">United States</p>
+                           </div>
+                           <div class="choose-language-main">
+                            <p class="choose-language-regions-main">English</p>
+                            <p class="language-nation-main">United States</p>
+                           </div>
+            
+                           <div class="choose-language-main">
+                            <p class="choose-language-regions-main">English</p>
+                            <p class="language-nation-main">United States</p>
+                           </div>
+            
+                           <div class="choose-language-main">
+                            <p class="choose-language-regions-main">English</p>
+                            <p class="language-nation-main">United States</p>
+                           </div>
+            
+                           <div class="choose-language-main">
+                            <p class="choose-language-regions-main">English</p>
+                            <p class="language-nation-main">United States</p>
+                           </div>
+            
+                           <div class="choose-language-main">
+                            <p class="choose-language-regions-main">English</p>
+                            <p class="language-nation-main">United States</p>
+                           </div>
+                       </div>
+                   </div>
+                </div>
+            </div> 
+
+            <!-- for currency popup -->
+
+            <div id="container-currency">
+                <header id="currency-header">
+                    <div id="close-button-currency">
+        
+                        <div id="first-cross-currency"></div>
+                        <div id="second-cross-currency"></div>
+            
+                      </div>
+        
+                </header>
+        
+                <hr>
+            <div class="currency-container" >
+               
+        
+               <!-- <div class="suggested-languages-and-regions">
+                   <div class="languages-heading">Suggested languages and regions</div>
+                   <div class="languages-section">
+        
+                       <div class="language">
+                           <p class="language-specific">English</p>
+                           <p class="language-nation">United States</p>
+                       </div>
+        
+                       <div class="language">
+                        <p class="language-specific">English</p>
+                        <p class="language-nation">United Kingdom</p>
+                    </div>
+        
+                    <div class="language">
+                        <p class="language-specific">Hindi</p>
+                        <p class="language-nation">India</p>
+                    </div>
+        
+                   </div>
+               </div> -->
+        
+               <div class="choose-currency-regions">
+                   <div class="choose-currency-regions-heading"> 
+                       <p> Choose a currency</p>
+                    </div>
+                   <div class="choose-currency-regions-section">
+        
+                       <div class="choose-currency-main">
+                        <p class="choose-currency-regions-main">Hindi</p>
+                        <p class="currency-nation-main">India</p>
+                       </div>
+        
+                       <div class="choose-currency-main">
+                        <p class="choose-currency-regions-main">Hindi</p>
+                        <p class="currency-nation-main">India</p>
+                       </div>
+        
+                       <div class="choose-currency-main">
+                        <p class="choose-currency-regions-main">Hindi</p>
+                        <p class="currency-nation-main">India</p>
+                       </div>
+        
+                       <div class="choose-currency-main">
+                        <p class="choose-currency-regions-main">Hindip
+                        <p class="currency-nation-main">India</p>
+                       </div>
+        
+                       <div class="choose-currency-main">
+                        <p class="choose-currency-regions-main">Hindi</p>
+                        <p class="currency-nation-main">India</p>
+                       </div>
+        
+                       <div class="choose-currency-main">
+                        <p class="choose-currency-regions-main">Bengali</p>
+                        <p class="currency-nation-main">Bangladesh</p>
+                       </div>
+        
+                       <div class="choose-currency-main">
+                        <p class="choose-currency-regions-main">Urdu</p>
+                        <p class="currency-nation-main">Pakistan</p>
+                       </div>
+        
+                       <div class="choose-currency-main">
+                        <p class="choose-currency-regions-main">Spanish</p>
+                        <p class="currency-nation-main">Spain</p>
+                       </div>
+        
+                       <div class="choose-currency-main">
+                        <p class="choose-currency-regions-main">English</p>
+                        <p class="currency-nation-main">United States</p>
+                       </div>
+        
+                       <div class="choose-currency-main">
+                        <p class="choose-currency-regions-main">Spanish</p>
+                        <p class="currency-nation-main">Spain</p>
+                       </div>
+        
+        
+                       <div class="choose-currency-main">
+                        <p class="choose-currency-regions-main">Spanish</p>
+                        <p class="currency-nation-main">Spain</p>
+                       </div>
+        
+        
+                       <div class="choose-currency-main">
+                        <p class="choose-currency-regions-main">Spanish</p>
+                        <p class="currency-nation-main">Spain</p>
+                       </div>
+        
+                       <div class="choose-currency-main">
+                        <p class="choose-currency-regions-main">English</p>
+                        <p class="currency-nation-main">United States</p>
+                       </div>
+        
+                       <div class="choose-currency-main">
+                        <p class="choose-currency-regions-main">English</p>
+                        <p class="currency-nation-main">United States</p>
+                       </div>
+        
+                       <div class="choose-currency-main">
+                        <p class="choose-currency-regions-main">English</p>
+                        <p class="currency-nation-main">United States</p>
+                       </div>
+        
+                       <div class="choose-currency-main">
+                        <p class="choose-currency-regions-main">English</p>
+                        <p class="currency-nation-main">United States</p>
+                       </div>
+        
+                       <div class="choose-currency-main">
+                        <p class="choose-currency-regions-main">English</p>
+                        <p class="currency-nation-main">United States</p>
+                       </div>
+        
+                       <div class="choose-currency-main">
+                        <p class="choose-currency-regions-main">English</p>
+                        <p class="currency-nation-main">United States</p>
+                       </div>
+        
+                       <div class="choose-currency-main">
+                        <p class="choose-currency-regions-main">English</p>
+                        <p class="currency-nation-main">United States</p>
+                       </div>
+        
+                       <div class="choose-currency-main">
+                        <p class="choose-currency-regions-main">English</p>
+                        <p class="currency-nation-main">United States</p>
+                       </div>
+        
+                       <div class="choose-currency-main">
+                        <p class="choose-currency-regions-main">English</p>
+                        <p class="currency-nation-main">United States</p>
+                       </div>
+        
+                       <div class="choose-currency-main">
+                        <p class="choose-currency-regions-main">English</p>
+                        <p class="currency-nation-main">United States</p>
+                       </div>
+        
+                       <div class="choose-currency-main">
+                        <p class="choose-currency-regions-main">English</p>
+                        <p class="currency-nation-main">United States</p>
+                       </div>
+        
+                       <div class="choose-currency-main">
+                        <p class="choose-currency-regions-main">English</p>
+                        <p class="currency-nation-main">United States</p>
+                       </div>
+        
+                       <div class="choose-currency-main">
+                        <p class="choose-currency-regions-main">English</p>
+                        <p class="currency-nation-main">United States</p>
+                       </div>
+        
+                       <div class="choose-currency-main">
+                        <p class="choose-currency-regions-main">English</p>
+                        <p class="currency-nation-main">United States</p>
+                       </div>
+        
+                       <div class="choose-currency-main">
+                        <p class="choose-currency-regions-main">English</p>
+                        <p class="currency-nation-main">United States</p>
+                       </div>
+        
+                       <div class="choose-currency-main">
+                        <p class="choose-currency-regions-main">English</p>
+                        <p class="currency-nation-main">United States</p>
+                       </div>
+        
+                       <div class="choose-currency-main">
+                        <p class="choose-currency-regions-main">English</p>
+                        <p class="currency-nation-main">United States</p>
+                       </div>
+        
+                       <div class="choose-currency-main">
+                        <p class="choose-currency-regions-main">English</p>
+                        <p class="currency-nation-main">United States</p>
+                       </div>
+        
+                       <div class="choose-currency-main">
+                        <p class="choose-currency-regions-main">English</p>
+                        <p class="currency-nation-main">United States</p>
+                       </div>
+        
+                       <div class="choose-currency-main">
+                        <p class="choose-currency-regions-main">English</p>
+                        <p class="currency-nation-main">United States</p>
+                       </div>
+        
+                       <div class="choose-currency-main">
+                        <p class="choose-currency-regions-main">English</p>
+                        <p class="currency-nation-main">United States</p>
+                       </div>
+        
+                       <div class="choose-currency-main">
+                        <p class="choose-currency-regions-main">English</p>
+                        <p class="currency-nation-main">United States</p>
+                       </div>
+                       <div class="choose-currency-main">
+                        <p class="choose-currency-regions-main">English</p>
+                        <p class="currency-nation-main">United States</p>
+                       </div>
+        
+                       <div class="choose-currency-main">
+                        <p class="choose-currency-regions-main">English</p>
+                        <p class="currency-nation-main">United States</p>
+                       </div>
+        
+                       <div class="choose-currency-main">
+                        <p class="choose-currency-regions-main">English</p>
+                        <p class="currency-nation-main">United States</p>
+                       </div>
+        
+                       <div class="choose-currency-main">
+                        <p class="choose-currency-regions-main">English</p>
+                        <p class="currency-nation-main">United States</p>
+                       </div>
+        
+                       <div class="choose-currency-main">
+                        <p class="choose-currency-regions-main">English</p>
+                        <p class="currency-nation-main">United States</p>
+                       </div>
+                       
+                   </div>
+               </div>
+            </div>
+        </div> 
+
+        </div>
+
+        <!-- help popup -->
+
+        <div id="help-container">
+
+            <header id="header">
+                <div id="heading">
+                    Recommended help
+                </div>
+                <div id="close-button-help">
+        
+                    <div id="first-cross"></div>
+                    <div id="second-cross"></div>
+        
+                  </div>
+        
+                
+            </header>
+        
+            <hr id="horizontal">
+        
+            <div id="main-conatainer">
+        
+                <div id="search-container">
+        
+                    <p id="search-text">Search by keyword</p>
+                    <input type="text" placeholder="Eg.:reservation status" 
+                    id="search-input-field">
+        
+                </div>
+        
+                <div id="latest-update">
+        
+                    <div id="latest-update-main">
+        
+                        <!-- <svg viewBox="0 0 24 24" role="presentation" 
+                        aria-hidden="true"
+                         focusable="false"
+                         style="height: 30px; width: 30px; display: block; fill: rgb(255, 180, 0);">
+                         <path d="m5.5 23.0034c.276 0 .5.224.5.5s-.224.5-.5.5-.5-.224-.5-.5.224-.5.5-.5zm12-19c1.381
+                          0 2.5 1.119 2.5 2.5v10c0 1.381-1.119 2.5-2.5 2.5h-5.331l-5.086 3.853c-.22.167-.533.124-.7-
+                          .097-.167-.22-.123-.533.096-.7l5.22-3.954c.087-.067.193-.102.302-.102h5.499c.828 0 1.5-.672
+                          1.5-1.5v-10c0-.829-.672-1.5-1.5-1.5h-15c-.829 0-1.5.671-1.5 1.5v10.091c0 .778.631 1.409
+                          1.409 1.409h2.093c.276 0 .5.224.5.5s-.224.5-.5.5h-2.093c-1.33 0-2.409-1.078-2.409-2
+                          .409v-10.091c0-1.381 1.119-2.5 2.5-2.5z" fill="#484848"></path><path d="m17 6.0037c.553
+                          0 1 .447 1 1v7c0 1.657-1.343 3-3 3h-3.488l-4.715 3.489c-.221.164-.535.117-.699-.105-
+                          .064-.085-.098-.19-.098-.297v-3.087h-3c-.552 0-1-.448-1-1v-7c0-1.657 1.343-3 3-3zm-6 5
+                          .611v-3.611c0-.553-.448-1-1-1s-1 .447-1 1v3.611c0 .552.448 1 1 1s1-.448 1-1zm-1 4.389c
+                          .552 0 1-.448 1-1 0-.553-.448-1-1-1s-1 .447-1 1c0 .552.448 1 1 1zm7.5-16.0037c.276 0 .
+                          5.22281167.5.49734748v2.00530504c0 .27453581-.224.49734748-.5.49734748-.275 0-.5-
+                          .22281167-.5-.49734748v-2.00530504c0-.27453581.225-.49734748.5-.49734748zm6.0021054
+                          6.0127c.2748378 0 .4978946.224.4978946.5s-.2230568.5-.4978946.5h-2.0075108c-.2748378
+                          0-.4978946-.224-.4978946-.5s.2230568-.5.4978946-.5zm-1.2111054-4.2822c.195.195.195.512
+                          0 .707l-1.426 1.425c-.195.196-.511.196-.707 0-.195-.195-.195-.511 0-.707l1.426-1.425c.
+                          195-.195.512-.195.707 0z">
+                        </path>
+                    </svg> -->
+                    <h3 id="update-main-heading">Coronavirus Update</h3>
+                    <p id="upadte-main-heading-definition">
+                        We are now offering Guests full refunds and Hosts no-charge cancellations
+                        for reservations booked on or before 14 March with a check-in date of 14 April 
+                        or earlier.Please note that this policy will not cover any new bookings.
+                    </p>
+                    
+                    <button type="text" id="latest-update-main-button">Learn more</button>
+                    
+                    </div>
+                </div>
+        
+                <div id="recommended-article-container">
+                    <div id="recommended-article-heading">recommended articles</div>
+                    <div id="recommended-article-widget">
+        
+                        <h3 id="recommended-article-widget-heading">Extenuating circumstances
+                             policy and the coronavirus (COVID-19)</h3>
+        
+                        <p id="recommended-article-widget-definition"> updated 19 March,2020</p>
+                        <span id="widget-read-more">Read more ></span>
+        
+                    </div>
+        
+                    <div id="recommended-article-widget">
+        
+                        <h3 id="recommended-article-widget-heading">Extenuating circumstances
+                             policy and the coronavirus (COVID-19)</h3>
+        
+                        <p id="recommended-article-widget-definition">updated 19 March,2020</p>
+                        <span id="widget-read-more">Read more ></span>
+                        
+                    </div>
+        
+                    <div id="recommended-article-widget">
+        
+                        <h3 id="recommended-article-widget-heading">Extenuating circumstances
+                             policy and the coronavirus (COVID-19)</h3>
+        
+                        <p id="recommended-article-widget-definition">updated 19 March,2020</p>
+                        <span id="widget-read-more">Read more ></span>
+                        
+                    </div>
+        
+                    <div id="recommended-article-widget">
+        
+                        <h3 id="recommended-article-widget-heading">Extenuating circumstances
+                             policy and the coronavirus (COVID-19)</h3>
+        
+                        <p id="recommended-article-widget-definition">Don’t send them money, 
+                            and let us know. We’ll never ask you to pay for anything outside of our site, 
+                            through email,
+                             or through a third-party…</p>
+                        <span id="widget-read-more">Read more ></span>
+                        
+                    </div>
+        
+                    <div id="recommended-article-widget">
+        
+                        <h3 id="recommended-article-widget-heading">Extenuating circumstances
+                             policy and the coronavirus (COVID-19)</h3>
+        
+                        <p id="recommended-article-widget-definition">Don’t send them money, and let us know.
+                             We’ll never ask you to pay 
+                            for anything outside of our site, through email, or through a third-party…</p>
+                        <span id="widget-read-more">Read more ></span>
+                        
+                    </div>
+        
+                </div>
+        
+                <div id="explore-more">
+        
+                    <section id="explore-more-main">
+        
+                        <h4 id="explore-more-main-heading">Explore more Articles by Topic</h4>
+        
+                        <!-- <div id="expolore-more-toggle">
+                            
+                            <p id="explore-more-toggle-text">Reservation requests</p>
+                        </div>
+        
+                        <div id="expolore-more-toggle">
+                            <p id="explore-more-toggle-text">Contacting hosts</p>
+                        </div>
+        
+                        <div id="expolore-more-toggle">
+                            <p id="explore-more-toggle-text">Prices & fees</p>
+                        </div> -->
+                        
+                <div class="paragraph-container">
+
+                <p class="paragraph-heading">Reservation requests
+                    </p>
+                <div class="button_def">
+
+                <button class="button_def_toggle"><a href="#" class="paragraph-link-toggel">
+                    koyla kaala hai chattanon ne paala hai.
+                    andar kaala bahar kaala par sacha hai saala.
+                </a></button> 
+
+                <button class="button_def_toggle"><a href="#" class="paragraph-link-toggel">koyla kaala hai 
+                    chattanon ne paala hai.
+                    andar kaala bahar kaala par sacha hai saala.
+                </a></button> 
+
+                <button class="button_def_toggle"><a href="#" class="paragraph-link-toggel">koyla kaala hai 
+                    chattanon ne paala hai.
+                    andar kaala bahar kaala par sacha hai saala.
+                </a></button> 
+
+            </div> 
+
+            </div>
+
+            <div class="paragraph-container">
+
+                <p class="paragraph-heading">Contact hosts
+                    </p>
+                <div class="button_def">
+                <button class="button_def_toggle"><a href="#" class="paragraph-link-toggel">
+                    koyla kaala hai chattanon ne paala hai.
+                    
+                </a></button> 
+                </div>   
+
+            </div>
+
+            <div class="paragraph-container">
+
+                <p class="paragraph-heading">Price and fees</p>
+                <div class="button_def">
+                <button class="button_def_toggle" ><a href="#" class="paragraph-link-toggel">
+                    koyla kaala hai chattanon ne paala hai.                                   
+                </a></button>  
+            </div>  
+
+            </div>
+                    </section>
+                
+                </div>
+            </div>
+        
+            <section id="footer-container">
+                <div id="visit-help-center">
+                    <a href="#" id="visit-help-center-text">Visit the help center</a>
+                </div>
+        
+                <div id="feedback">
+                    <a href="#" id="feedback-text">Give Feedback</a>
+                </div>
+            </section>
+        
+        
+        </div>
+
+        <!-- sign up pop up -->
+
+        <div id="sign-up-container">
+
+            <header id="sign-up-header">
+                
+                <div id="close-button-signup">
+                    
+                    <div id="first-cross"></div>
+                    <div id="second-cross"></div>
+    
+                  </div>
+    
+                <div id="sign-up-heading">Sign up </div>
+    
+            </header>
+    
+            <hr>
+    
+            <div id="container-main-sign-up">
+    
+                <div id="register-container">
+                    
+                  <div id="input-container">
+
+                     <div id="input-value"> 
+    
+                        <span id="country-heading">Country/Region</span>
+                        <p id="selected-country">India (+91) </p>
+                        <!-- <select name="" id="countries">
+                            <option value="india">India</option>
+                            <option value="America">America</option>
+                            <option value="Austarlia">Austarlia</option>
+                            <option value="Japan">Japan</option>
+                            <option value="South-Korea">South Korea</option>
+                            <option value="Israel">Israel</option>
+                            <option value="Russia">Russia</option>
+                            <option value="France">France</option>
+    
+                        </select> -->
+                   
+                    </div>
+    
+                    <input type="text" name="contact-number" 
+                    id="phone-number" placeholder="Phone number">
+    
+                </div>
+                
+
+    
+                    <p id="terms">We'll call or text You to confirm your number.
+                        standard messages and data rates apply.
+                    </p>
+                    <div id="continue-button">
+                        Continue
+                    </div>
+
+                    <!-- <button type="submit" id="continue-button">Continiue</button> -->
+                    
+                    <!-- <button id="continue-button">Continue</button>    -->
+    
+                </div>
+    
+                <hr id="left-line">
+                <p class="or-text">or</p>
+    
+                
+                <div id="register-others">
+    
+                    <button id="email-button" class="social-buttons"> Continue with email</button>
+                    <div id="facebook-button" class="social-buttons"> Continue with Facebook</div>
+                    <div id="google-button" class="social-buttons"> Continue with Google</div>
+                    <div id="apple-button" class="social-buttons"> Continue with Apple</div>
+    
+                </div>
+    
+                <div id="log-in">
+                    <p>Already have an account? <a href="#" id="log-in-anchor">Log in </a></p>
+                </div>
+    
+    
+            </div>
+            
+        </div>
+
+        <!-- log in pop up -->
+        
+        <div id="log-in-container">
+
+            <header id="log-in-header">
+    
+                <div id="close-button">
+    
+                    <div id="first-cross"></div>
+                    <div id="second-cross"></div>
+    
+                  </div>
+    
+                <div id="log-in-heading"> Log in </div>
+    
+            </header>
+    
+            <hr>
+    
+            <div id="container-main">
+    
+                <div id="register-container">
+                  <div id="input-container">
+                  <div id="input-value"> 
+    
+                        <span id="country-heading">Country/Region</span>
+                        <p id="selected-country">India (+91) </p>
+                        <!-- <select name="" id="countries">
+                            <option value="india">India</option>
+                            <option value="America">America</option>
+                            <option value="Austarlia">Austarlia</option>
+                            <option value="Japan">Japan</option>
+                            <option value="South-Korea">South Korea</option>
+                            <option value="Israel">Israel</option>
+                            <option value="Russia">Russia</option>
+                            <option value="France">France</option>
+    
+                        </select> -->
+                   
+                    </div>
+    
+                    <input type="text" name="contact-number" 
+                    id="phone-number-logIn" placeholder="Phone number">
+    
+                </div>
+    
+                    <p id="terms">We'll call or text You to confirm your number.
+                        standard messages and data rates apply.
+                    </p>
+                    <div id="continue-button">
+                        Continue
+                    </div>
+                    <!-- <button id="continue-button">Continue</button>    -->
+    
+                </div>
+    
+                <hr id="left-line">
+                <p class="or-text">or</p>
+    
+                
+                <div id="register-others">
+    
+                    <div id="email-button" class="social-buttons"> Continue with email</div>
+                    <div id="facebook-button" class="social-buttons"> Continue with Facebook</div>
+                    <div id="google-button" class="social-buttons"> Continue with Google</div>
+                    <div id="apple-button" class="social-buttons"> Continue with Apple</div>
+    
+                </div>
+    
+                <div id="sign-up">
+                    <p>Don't have an account? <a href="#" id="sign-up-anchor">Sign up </a></p>
+                </div>
+    
+    
+            </div>
+            
+        </div>
+           
+    
+        </header>    
+       
+    <div class="navigation-with-terms-conditon">
+
+        
+            <div class="booking_form" id="booking-form">
+                <form action="submit" class="form">
+                    <h1 class="booking-form-heading">Book unique 
+                        places 
+                        to stay
+                        and things to do.
+                    </h1>
+                    <div class="form-input-container">
+                    <label class="form-text">WHERE</label>
+                    <input type="text" name="where" id="guests-anywhere" 
+                    placeholder="Anywhere">
+                    </div>  
+                    <div class="form-checbox">
+                    <div class="form-input-container-checkbox">
+                    <label class="form-text">CHECK-IN</label>
+                    <input type="date" 
+                    name="check_in" 
+                    id="guests-check-in"
+                     placeholder="dd/mm/yyyy">
+                    </div>
+                    <div class="form-input-container-checkbox">
+                    <label class="form-text">CHECKOUT</label>
+                    <input type="date" 
+                    name="check_out"
+                     id="guests-check-out"
+                     placeholder="dd/mm/yyyy">
+                    </div>
+                    </div>
+                    <div class="form-input-container">
+                    <label class="form-text">GUESTS</label>
+                    <!-- <button class="guests">Guests</button> -->
+                    <input type="text" 
+                     name="guests" id="guests_input"
+                     value="Guests" 
+                     onclick="myFunction()">
+                    </div>
+                   
+                    <div class="booking_form-search-button">Search</div>
+                    
+                </form>   
+
+                <!--  for guest toggle starts here     -->
+           
+                <div id="container-guest">
+                    <div class="guest-container">
+                        <div class="guest-label-column">
+                             <div class="label">
+                                 <label for="">Adults</label>
+                             </div>
+                             <div class="label">
+                                 <label for="">Children</label>
+                                 <label for="" class="label-defintion">Ages 2-12</label>
+                                 
+                             </div>
+                             <div class="label">
+                                <label for="">Infants</label>
+                                <label for="" class="label-defintion">Under 2</label>
+                             </div>
+                        </div>
+                
+                        
+                        <div class="guest-button-column">
+                
+                             <div class="guest-button">
+                                 <div class="button-left" id="button_left_adults">
+                                     <p class="button-minus"
+                                     onclick="buttonMinus('button-adults')">-</p>
+                                 </div>
+                                 <p class="guest-button-number"
+                                    id="guest-button-adults">0+</p>
+                                 <div class="button-right" id="button_right">
+                                     <p class="button-plus"
+                                        id="button-adults"                                        
+                                      onclick="buttonPlus('button-adults')">+</p>
+                                 </div>
+                             </div>
+                
+                             <div class="guest-button">
+                                <div class="button-left" id="button_left_children">
+                                    <p class="button-minus"
+                                    onclick="buttonMinus('button-children')">-</p>
+                                </div>
+                                <p class="guest-button-number"
+                                    id="guest-button-children-number">0+</p>
+                                <div class="button-right" id="button_right_children">
+                                    <p class="button-plus" 
+                                        id="button-children"
+                                    onclick="buttonPlus('button-children')">+</p>
+                                </div>
+                             </div>
+                
+                             <div class="guest-button">
+                                <div class="button-left" id="button_left_infants">
+                                    <p class="button-minus"
+                                     onclick="buttonMinus('button-infants')">-</p>
+                                </div>
+                                <p class="guest-button-number" 
+                                id="guest-button-infants-number">0+</p>
+                                <div class="button-right" id="button_right_infants">
+                                    <p class="button-plus"
+                                     id="button-infants" 
+                                     onclick="buttonPlus('button-infants')">+</p>
+                                </div>
+                             </div>
+                
+                        </div>
+                    </div>
+                    <div class="save-button">
+                        <p>Save</p>
+                    </div>
+                </div>
+
+                <!--  guest toggle ends here -->
+                
+            </div>
+        
+            <div class="terms-and-condition" id="terms_and_condition" >
+                <div class="border-top-color">
+                    <section></section>
+                </div>
+                <h3 class="terms-and-condition-heading">Our response to the COVID-19 pandemic</h3>
+                <p class="terms-and-condition-definition">We are now offering Guests full refunds
+                     and Hosts no-charge cancellations for reservations booked on or before 14 
+                     March with a check-in date of 14 April or earlier. 
+                    Please note that this policy will not cover any new bookings.</p>
+                <a href="#"class="terms-and-condition-learn-more">Learn More</a>
+            </div>
+    </div>
+            
+            <div class="unique-places" id="unique_places">
+                <a href="#" class="unique-places1" >Over 300 unique places
+                    to stay in Oregon
+                </a>
+                </div>
+                <div class="explore-airbnb" id="explore_airbnb">
+                <h2 class="explore-airbnb-heading">Explore Airbnb</h2>
+                <div class="explore-airbnb-column">
+                <div class="explore-airbnb-widget">
+                    <img src="/public/images/airbnb2.png" alt="" class="explore-airbnb-widget-image">
+                    <a href="" class="explore-airbnb-tag">Stays</a>
+                </div>
+                <div class="explore-airbnb-widget">
+                    <img src="/public/images/airbnb2.png" alt="" class="explore-airbnb-widget-image">
+                    <a href="" class="explore-airbnb-tag">Experience</a>
+                </div>
+                
+                <div class="explore-airbnb-widget">
+                    <img src="/public/images/airbnb2.png" alt="" class="explore-airbnb-widget-image">
+                    <a href="" class="explore-airbnb-tag">Adventures</a>
+                </div>
+                </div>
+                
+            </div>
+            <!-- <div class="places-to-stay">
+                <h2 class="headings">Airbnb Plus places to stay</h2>
+                <p class="paragraph">A selection of places to stay verified for
+                    quality and  design.
+                </p>
+                <img src="" alt="">
+            </div> -->
+            <div class="airbnb-adventures" id="airbnb_adventures">
+                <h2 class="heading airbnb-adventures-heading">Introducing Airbnb Adventures</h2>
+                <p class="airbnb-adventures-widget-paragraph-heading">Multi-day trips led by local experts- acitivities,meals
+                     and stay included.
+                </p>
+          <div class="airbnb-adventure-container">
+            <div class="airbnb-adventures-widget">
+                <img src="/public/images/Airbnb-Luxe.jpg" alt="" class="airbnb-adventure-widget-image" >
+                <h3 class="airbnb-adventures-widget-heading">RUSSIAN FEDERATION</h3>
+                <P class="airbnb-adventures-widget-paragraph">Окунитесь в
+                     настоящую сельскую жизнь</P>
+            <div class="airbnb-adventure-cost-container">
+                <ul class="airbnb-adventure-cost-list">
+                <li class="airbnb-adventure-cost-and-duration">From $6400</li>
+                <li class="visit-duration">2 days</li>    
+                </ul>
+            </div>              
+            </div>
+            <div class="airbnb-adventures-widget">
+                <img src="/public/images/Airbnb-Luxe.jpg" alt="" class="airbnb-adventure-widget-image">
+                <h3 class="airbnb-adventures-widget-heading">CANADA</h3>
+                <P class="airbnb-adventures-widget-paragraph">Окунитесь в настоящую 
+                    сельскую жизнь</P>
+                <div class="airbnb-adventure-cost-container">
+                <ul class="airbnb-adventure-cost-list">
+                <li class="airbnb-adventure-cost-and-duration">From $10,500/person</li>
+                <li class="visit-duration">2 days</li>
+                </ul>
+                <p class="airbnb-adventures-widget-review">4.76(55)</p>  
+                </div>             
+            
+            </div>
+            <div class="airbnb-adventures-widget">
+                <img src="/public/images/Airbnb-Luxe.jpg" alt="" class="airbnb-adventure-widget-image">
+                <h3 class="airbnb-adventures-widget-heading">UNITED STATES</h3>
+                <P class="airbnb-adventures-widget-paragraph">Окунитесь в настоящую сельскую
+                     жизнь</P>
+                 <div class="airbnb-adventure-cost-container">
+                <ul class="airbnb-adventure-cost-list">
+                <li class="airbnb-adventure-cost-and-duration">From $2700/person</li>
+                <li class="visit-duration">3 days</li>
+                </ul>
+                <p class="ratings"></p>
+                <p class="airbnb-adventures-widget-review"></p>
+                     </div>
+            </div>
+            <div class="airbnb-adventures-widget">
+                <img src="/public/images/Airbnb-Luxe.jpg" alt="" class="airbnb-adventure-widget-image">
+                <h3 class="airbnb-adventures-widget-heading">MADAGASCER</h3>
+                <P class="airbnb-adventures-widget-paragraph">Nature photography 
+                    in madagascer</P>
+                <div class="airbnb-adventure-cost-container">
+                <ul class="airbnb-adventure-cost-list">
+                <li class="airbnb-adventure-cost-and-duration">From $5000,121/person</li>
+                <li class="visit-duration">14 days</li>
+                </ul>                
+                </div>
+                <p class="airbnb-adventures-widget-review"></p>
+            </div>
+
+            <div class="airbnb-adventures-widget">
+                <img src="/public/images/Airbnb-Luxe.jpg" alt=""  class="airbnb-adventure-widget-image">
+                <h3 class="airbnb-adventures-widget-heading">VIETNAM</h3>
+                <P class="airbnb-adventures-widget-paragraph">Nature photography in 
+                    madagascer</P>
+                <div class="airbnb-adventure-cost-container">
+                <ul class="airbnb-adventure-cost-list">
+                <li class="airbnb-adventure-cost-and-duration">From $5000,121/person</li>
+                <li class="visit-duration">14 days</li>
+                </ul>                
+            </div>
+            <p class="airbnb-adventures-widget-review">4.93(55)</p>
+            </div>
+          </div>
+
+           <div>
+            <a href="#" class="show-more-airbnb-adventures">Show all adventures</a>
+            </div>
+
+
+            <div class="places-to-stay-around-the-world">
+                <h2 class="heading-places-to-stay-around-the-world">
+                    Places to stay around the world</h2>
+                <div class="places-to-stay-around-the-world-container">
+                <div class="places-to-stay-around-the-world-widget">
+                    <img src="/public/images/airbnb1.jpeg" alt="" 
+                    class="places-to-stay-around-the-world-widget-image">
+                    <div class="places-to-stay-around-the-world-host-country">
+                    <a href="#" class="host-country">
+                        <span class="places-to-stay-around-the-world-widget-superhost">
+                            Superhost</span>Japan
+                    </a>
+                    <!-- <div class="places-to-stay-around-the-world"> -->
+                    <a href="#" class="places-to-stay-around-the-world-widget-review">4.97</a>
+                    <!-- </div> -->
+                </div>
+                    <div>
+                    <a href="#" class="places-to-stay-around-the-world-paragraph">
+                        Japan charm and tradition</a>
+                    </div>    
+                    <p class="cost-and-duration"><strong>$8000</strong>/night</p>
+                </div>
+
+                <div class="places-to-stay-around-the-world-widget">
+                    <img src="/public/images/airbnb1.jpeg" alt="" 
+                    class="places-to-stay-around-the-world-widget-image">
+                    <div class="places-to-stay-around-the-world-host-country">
+                    <a href="#" class="host-country">
+                        <span class="places-to-stay-around-the-world-widget-superhost">
+                            Superhost</span>United states
+                    </a>
+                    <a href="#" class="places-to-stay-around-the-world-widget-review">4.97</a>
+                </div>
+                    <div>
+                    <a href="#" class="places-to-stay-around-the-world-paragraph">
+                        Joshua tree and homesteader Cabin</a>
+                    </div>    
+                    <p class="cost-and-duration"><strong>$8000</strong>/night</p>
+                </div>
+
+               <div class="places-to-stay-around-the-world-widget">
+                    <img src="/public/images/airbnb1.jpeg" alt="" 
+                    class="places-to-stay-around-the-world-widget-image">
+                    <div class="places-to-stay-around-the-world-host-country">
+                    <a href="#" class="host-country">
+                        <span class="places-to-stay-around-the-world-widget-superhost">
+                        Superhost</span>
+                        Hungary</a>
+                    <a href="#" class="places-to-stay-around-the-world-widget-review">4.97</a>
+                    </div>
+                    <a href="#" class="places-to-stay-around-the-world-paragraph">
+                        Hidden Gem of Budapest city center</a>
+                    <div>
+                    <p class="cost-and-duration"><strong>$8000</strong>/night</p>
+                </div>
+               </div>
+
+                <div class="places-to-stay-around-the-world-widget">
+                    <img src="/public/images/airbnb1.jpeg"
+                     alt="" class="places-to-stay-around-the-world-widget-image">
+                     <div class="places-to-stay-around-the-world-host-country">
+                    <a href="#" class="host-country">
+                        <span class="places-to-stay-around-the-world-widget-superhost">
+                        Superhost</span>United states</a>
+                    <a href="#" class="places-to-stay-around-the-world-widget-review">4.97</a>
+                </div>
+                    <div>
+                    <a href="#" class="places-to-stay-around-the-world-paragraph">
+                        Treehouse at Kilauea Volcano</a>
+                    </div>    
+                    <p class="cost-and-duration"><strong>$8000</strong>/night</p>
+                </div> 
+              
+                
+             <div class="places-to-stay-around-the-world-widget">
+                    <img src="/public/images/airbnb1.jpeg" 
+                    alt="" class="places-to-stay-around-the-world-widget-image">
+                    <div class="places-to-stay-around-the-world-host-country">
+                    <a href="#" class="host-country">
+                        <span class="places-to-stay-around-the-world-widget-superhost">
+                        Superhost</span>United states</a>
+                    <a href="#" class="places-to-stay-around-the-world-widget-review">4.97</a>
+                    </div>
+                   <div>
+                    <a href="#" class="places-to-stay-around-the-world-paragraph">
+                        Dreamy Tropical Treehouse</a>
+                    </div>     
+                    <p class="cost-and-duration"><strong>$8000</strong>/night</p>
+                </div> 
+             
+
+                <div class="places-to-stay-around-the-world-widget">
+                    <img src="/public/images/airbnb1.jpeg"
+                     alt="" class="places-to-stay-around-the-world-widget-image">
+                     <div class="places-to-stay-around-the-world-host-country">
+                    <a href="#" class="host-country">
+                        <span class="places-to-stay-around-the-world-widget-superhost">
+                        Superhost</span>Brazil</a>
+                    <a href="#" class="places-to-stay-around-the-world-widget-review">4.97</a>
+                     </div>
+                    <div>
+                    <a href="#" class="places-to-stay-around-the-world-paragraph">
+                        Exceptional property private</a>
+                    </div>    
+                    <p class="cost-and-duration"><strong>$8000</strong>/night</p>
+                </div>  
+             
+
+                <div class="places-to-stay-around-the-world-widget">
+                    <img src="/public/images/airbnb1.jpeg" 
+                    alt="" class="places-to-stay-around-the-world-widget-image">
+                    <div class="places-to-stay-around-the-world-host-country">
+                    <a href="#" class="host-country">
+                        <span class="places-to-stay-around-the-world-widget-superhost">
+                        Superhost</span>Colombia</a>
+                    <a href="#" class="places-to-stay-around-the-world-widget-review">4.97</a>
+                    </div>
+                    <div>
+                    <a href="#" class="places-to-stay-around-the-world-paragraph">
+                        Romantic Cabana with view</a>
+                    </div>     
+                    <p class="cost-and-duration"><strong>$8000</strong>/night</p>
+                </div>   
+            
+
+                <div class="places-to-stay-around-the-world-widget">
+                    <img src="/public/images/airbnb1.jpeg" 
+                    alt="" class="places-to-stay-around-the-world-widget-image">
+                    <div class="places-to-stay-around-the-world-host-country">
+                    <a href="#" class="host-country">
+                        <span class="places-to-stay-around-the-world-widget-superhost">
+                        Superhost</span>Spain</a>
+                    <a href="#" class="places-to-stay-around-the-world-widget-review">4.97</a>
+                    </div>
+                    <div>
+                    <a href="#" class="places-to-stay-around-the-world-paragraph">
+                        Double Room in El vaixell de paper</a>
+                    </div>     
+                    <p class="cost-and-duration"><strong>$8000</strong>/night</p>               
+               
+                </div>               
+             </div>  
+             <div class="places-to-stay-around-the-world-show-more">
+             <a href="#" class="show-more">Show (2000+) </a>
+            </div>
+            </div> 
+
+            <div class="popular-destinations">
+                <h2 class="heading popular-destinations-heading">
+                    Popular destinations of United States</h3>
+            <div class="popular-destinations-container">
+
+                <div class="popular-destinations-city-and-cost-container" >
+                <a href="#" class="popular-destinations-city">San Francisco</a>
+                <a href="#" class="popular-destinations-city-duration">$200/night average</a>
+                </div>
+
+                <div class="popular-destinations-city-and-cost-container">
+                <a href="#" class="popular-destinations-city">Los Angeles</a>
+                <a  href="#" class="populer-destinations-city-duration">$200/night average</a>
+                </div>
+
+                <div class="popular-destinations-city-and-cost-container">
+                <a href="#" class="popular-destinations-city">New York</a>
+                <a href="#" class="popular-destinations-city-duration">$200/night average</a>
+                </div>
+
+                <div class="popular-destinations-city-and-cost-container">
+                <a href="#" class="popular-destinations-city">Seattle</a>
+                <a href="#" class="popular-destinations-city-duration">$200/night average</a>
+                </div>
+
+                <div class="popular-destinations-city-and-cost-container">
+                <a href="#" class="popular-destinations-city">Denver</a>
+                <a href="#" class="popular-destinations-city-duration">$200/night average</a>
+                </div>
+
+                <div class="popular-destinations-city-and-cost-container">
+                <a href="#" class="popular-destinations-city">Washington DC</a>
+                <a href="#" class="popular-destinations-city-duration">$200/night average</a>
+                </div>
+
+                <div class="popular-destinations-city-and-cost-container">
+                <a href="#" class="popular-destinations-city">Phoenix</a>
+                <a href="#" class="popular-destinations-city-duration">$200/night average</a>
+                </div>
+
+                <div class="popular-destinations-city-and-cost-container">
+                <a href="#" class="popular-destinations-city">Austin</a>
+                <a href="#" class="popular-destinations-city-duration">$200/night average</a>
+                </div>
+
+                <div class="popular-destinations-city-and-cost-container">
+                <a href="#" class="popular-destinations-city">Houstonstin</a>
+                <a href="#" class="popular-destinations-city-duration">$200/night average</a>
+                </div>
+
+                <div class="popular-destinations-city-and-cost-container">
+                <a href="#" class="popular-destinations-city">New Orleans</a>
+                <a href="#" class="popular-destinations-city-duration">$200/night average</a>
+                </div>
+            </div>
+            </div>
+
+            <div class="featured-airbnb-plus-destinations">
+                
+                <h2 class="heading featured-airbnb-plus-destinations-heading">
+                    Feature airbnb plus destinations
+                </h2>
+                   
+                <p class="featured-airbnb-plus-destinations-definition">
+                    Browse beautiful places to stay with all comforts of home,plus more.</p>
+            <div class="featured-airbnb-plus-destinations-carousal-container">
+
+                 <div class="featured-airbnb-plus-destinations-carousel">
+                    <img src="/public/images/Airbnb-Plus-1024x683.jpg" alt=""  class="featured-airbnb-plus-destinations-image" >
+                    <a href="#" class="verified-stays">400 verified stays</a>
+                    <div  class="verified-stays-definition">Book sunny lofts,
+                        beachfront flats 
+                        and more verified places to stay in a city with world-class
+                        coffee and street art.
+                    </div>
+                 </div>
+
+                 <div class="featured-airbnb-plus-destinations-carousel">
+                    <img src="/public/images/Airbnb-Plus-1024x683.jpg" alt=""  class="featured-airbnb-plus-destinations-image">
+                    <a href="#" class="verified-stays">400 verified stays</a>
+                    <div  class="verified-stays-definition">Book sunny lofts,
+                        beachfront flats 
+                        and more verified places to stay in a city with world-class
+                        coffee and street art.
+                    </div>
+                 </div>
+
+                 <div class="featured-airbnb-plus-destinations-carousel">
+                    <img src="/public/images/Airbnb-Plus-1024x683.jpg" alt=""  class="featured-airbnb-plus-destinations-image">
+                    <a href="#" class="verified-stays">400 verified stays</a>
+                    <div class="verified-stays-definition">Book sunny lofts,
+                        beachfront flats 
+                        and more verified places to stay in a city with world-class
+                        coffee and street art.
+                    </div>
+                </div>                         
+              </div>
+              <a href="" class="show-more">
+                Show more Airbnb destinations
+            </a>
+            </div>
+
+            <div class="stay-with-superhost">
+                <!-- <div class="stay-with-superhost-heading"> -->
+                <h2 class="heading stay-with-superhost-heading">Stay with a supershot</h3>
+                <p class="stay-with-superhost-heading-definition">Make yourself 
+                    at home with experience hosts</p>
+                <!-- </div> -->
+                <div class="places-to-stay-around-the-world-container">
+                    <div class="places-to-stay-around-the-world-widget">
+                        <img src="/public/images/1_ty1y3p7KiolYhUOstFzwFA.png" alt="" 
+                        class="places-to-stay-around-the-world-widget-image">
+                        <div class="places-to-stay-around-the-world-host-country">
+                        <a href="#" class="host-country">
+                            <span class="places-to-stay-around-the-world-widget-superhost">
+                                Superhost</span>Japan
+                        </a>
+                        <!-- <div class="places-to-stay-around-the-world"> -->
+                        <a href="#" class="places-to-stay-around-the-world-widget-review">4.97</a>
+                        <!-- </div> -->
+                    </div>
+                        <div>
+                        <a href="#" class="places-to-stay-around-the-world-paragraph">
+                            Japan charm and tradition</a>
+                        </div>    
+                        <p class="cost-and-duration"><strong>$8000</strong>/night</p>
+                    </div>
+    
+                    <div class="places-to-stay-around-the-world-widget">
+                        <img src="/public/images/1_ty1y3p7KiolYhUOstFzwFA.png" alt="" 
+                        class="places-to-stay-around-the-world-widget-image">
+                        <div class="places-to-stay-around-the-world-host-country">
+                        <a href="#" class="host-country">
+                            <span class="places-to-stay-around-the-world-widget-superhost">
+                                Superhost</span>United states
+                        </a>
+                        <a href="#" class="places-to-stay-around-the-world-widget-review">4.97</a>
+                    </div>
+                        <div>
+                        <a href="#" class="places-to-stay-around-the-world-paragraph">
+                            Joshua tree and homesteader Cabin</a>
+                        </div>    
+                        <p class="cost-and-duration"><strong>$8000</strong>/night</p>
+                    </div>
+    
+                   <div class="places-to-stay-around-the-world-widget">
+                        <img src="/public/images/1_ty1y3p7KiolYhUOstFzwFA.png" alt="" 
+                        class="places-to-stay-around-the-world-widget-image">
+                        <div class="places-to-stay-around-the-world-host-country">
+                        <a href="#" class="host-country">
+                            <span class="places-to-stay-around-the-world-widget-superhost">
+                            Superhost</span>
+                            Hungary</a>
+                        <a href="#" class="places-to-stay-around-the-world-widget-review">4.97</a>
+                        </div>
+                        <a href="#" class="places-to-stay-around-the-world-paragraph">
+                            Hidden Gem of Budapest city center</a>
+                        <div>
+                        <p class="cost-and-duration"><strong>$8000</strong>/night</p>
+                    </div>
+                   </div>
+    
+                    <div class="places-to-stay-around-the-world-widget">
+                        <img src="/public/images/1_ty1y3p7KiolYhUOstFzwFA.png"
+                         alt="" class="places-to-stay-around-the-world-widget-image">
+                         <div class="places-to-stay-around-the-world-host-country">
+                        <a href="#" class="host-country">
+                            <span class="places-to-stay-around-the-world-widget-superhost">
+                            Superhost</span>United states</a>
+                        <a href="#" class="places-to-stay-around-the-world-widget-review">4.97</a>
+                    </div>
+                        <div>
+                        <a href="#" class="places-to-stay-around-the-world-paragraph">
+                            Treehouse at Kilauea Volcano</a>
+                        </div>    
+                        <p class="cost-and-duration"><strong>$8000</strong>/night</p>
+                    </div> 
+                  
+                    
+                 <div class="places-to-stay-around-the-world-widget">
+                        <img src="/public/images/1_ty1y3p7KiolYhUOstFzwFA.png" 
+                        alt="" class="places-to-stay-around-the-world-widget-image">
+                        <div class="places-to-stay-around-the-world-host-country">
+                        <a href="#" class="host-country">
+                            <span class="places-to-stay-around-the-world-widget-superhost">
+                            Superhost</span>United states</a>
+                        <a href="#" class="places-to-stay-around-the-world-widget-review">4.97</a>
+                        </div>
+                       <div>
+                        <a href="#" class="places-to-stay-around-the-world-paragraph">
+                            Dreamy Tropical Treehouse</a>
+                        </div>     
+                        <p class="cost-and-duration"><strong>$8000</strong>/night</p>
+                    </div> 
+                 
+    
+                    <div class="places-to-stay-around-the-world-widget">
+                        <img src="/public/images/1_ty1y3p7KiolYhUOstFzwFA.png"
+                         alt="" class="places-to-stay-around-the-world-widget-image">
+                         <div class="places-to-stay-around-the-world-host-country">
+                        <a href="#" class="host-country">
+                            <span class="places-to-stay-around-the-world-widget-superhost">
+                            Superhost</span>Brazil</a>
+                        <a href="#" class="places-to-stay-around-the-world-widget-review">4.97</a>
+                         </div>
+                        <div>
+                        <a href="#" class="places-to-stay-around-the-world-paragraph">
+                            Exceptional property private</a>
+                        </div>    
+                        <p class="cost-and-duration"><strong>$8000</strong>/night</p>
+                    </div>  
+                 
+    
+                    <div class="places-to-stay-around-the-world-widget">
+                        <img src="/public/images/1_ty1y3p7KiolYhUOstFzwFA.png" 
+                        alt="" class="places-to-stay-around-the-world-widget-image">
+                        <div class="places-to-stay-around-the-world-host-country">
+                        <a href="#" class="host-country">
+                            <span class="places-to-stay-around-the-world-widget-superhost">
+                            Superhost</span>Colombia</a>
+                        <a href="#" class="places-to-stay-around-the-world-widget-review">4.97</a>
+                        </div>
+                        <div>
+                        <a href="#" class="places-to-stay-around-the-world-paragraph">
+                            Romantic Cabana with view</a>
+                        </div>     
+                        <p class="cost-and-duration"><strong>$8000</strong>/night</p>
+                    </div>   
+                
+    
+                    <div class="places-to-stay-around-the-world-widget">
+                        <img src="/public/images/1_ty1y3p7KiolYhUOstFzwFA.png" 
+                        alt="" class="places-to-stay-around-the-world-widget-image">
+                        <div class="places-to-stay-around-the-world-host-country">
+                        <a href="#" class="host-country">
+                            <span class="places-to-stay-around-the-world-widget-superhost">
+                            Superhost</span>Spain</a>
+                        <a href="#" class="places-to-stay-around-the-world-widget-review">4.97</a>
+                        </div>
+                        <div>
+                        <a href="#" class="places-to-stay-around-the-world-paragraph">
+                            Double Room in El vaixell de paper</a>
+                        </div>     
+                        <p class="cost-and-duration"><strong>$8000</strong>/night</p>               
+                   
+                    </div>               
+                 </div>        
+                
+                <a href="" class="show-more show-more-supershot">show(2000)</a>
+
+            </div>
+            <!-- <div class="unique-places-to-stay">
+                <h2 class="heading">Unique places to stay for your next trip</h3>
+                <p>Book one of these unique spots to escape the ordinary.</p>
+                <div class="unique-places-to-stay-widget">
+                    <img src="" alt="">
+                    <a href="#" class="unique-places-to-stay-widget-specification">
+                        1,900 TREEHOUSE
+                    </a>
+                    <a href="#" class="unique-places-to-stay-widget-paragraph-heading">
+                        Get some perspective
+                    </a>
+                    <a href="" class="unique-places-to-stay-widget-paragraph">
+                        Take your trip to new hights with these one-of-a-kind treehouse.
+                    </a>
+                    
+                </div>
+
+                <div class="unique-places-to-stay-widget">
+                    <img src="" alt="">
+                    <a href="#" class="unique-places-to-stay-widget-specification">
+                        2000+ BOATS
+                    </a>
+                    <a href="#" class="unique-places-to-stay-widget-paragraph-heading">
+                        Get some perspective
+                    </a>
+                    <a href="" class="unique-places-to-stay-widget-paragraph">
+                       follow in the footsteps of adventurers past with boats of 
+                       all shapes and sizes.
+                    </a>
+                </div>
+
+                <div class="unique-places-to-stay-widget">
+                    <img src="" alt="">
+                    <a href="#" class="unique-places-to-stay-widget-specification">
+                        1820 YURTS
+                    </a>
+                    <a href="#" class="unique-places-to-stay-widget-paragraph-heading">
+                        Get some perspective
+                    </a>
+                    <a href="" class="unique-places-to-stay-widget-paragraph">
+                        Embrace a mix of indoor comforts and the great outdoors.
+                    </a>
+                </div>
+                <div class="arrow-next">
+                    >
+                </div>
+            </div> -->
+
+
+        </div>
+    </div>
+
+    
+    
+    
+    <footer class="footer" id="main-footer">
+        <hr class="footer-horizontal">
+    <div class="container-footer">
+    <div class="footer-column ">
+        <h4 class="footer-heading">ABOUT</h4>
+        <ul class="about-list-items">
+            <a href="#">
+            <li class="about-list-item">Diversity & Belonging</li>
+            </a>
+            <a href="#">
+            <li class="about-list-item">Accessibility</li>
+            </a>
+            <a href="#">
+            <li class="about-list-item">Trust and safety</li>
+            </a>
+            <a href="#">
+            <li class="about-list-item">Airbnb Citizen</li>
+            </a>
+            <a href="#">
+            <li class="about-list-item">Newsroom</li>
+            </a>
+
+        </ul>
+    </div>
+
+    <div class="footer-column">
+        
+        <h4 class="footer-heading">COMMUNITY</h4>
+        <ul class="community-list-items">
+            <a href="#">
+            <li class="community-list-item">Airbnb Magazine</li>
+        </a>
+        <a href="#">
+            <li class="community-list-item">Airbnb For Work</li>
+            </a>
+            <a href="#">
+            <li class="community-list-item">Invite Friends</li>
+            </a>
+            <a href="#">
+            <li class="community-list-item">Careers</li>
+            </a>
+            
+        </ul>
+    </div>
+
+    <div class="footer-column">
+        <h4 class="footer-heading">HOST</h4>
+        <ul class="host-list-items">
+            <li class="host-list-item"> <a href="">Host your home </a></li> 
+            <li class="host-list-item"> <a href="#">Host an experience </a></li>
+            <li class="host-list-item"> <a href="#"> Responsible Hosting </a></li>
+            <li class="host-list-item"> <a href="#"> Open homes </a></li>
+            <li class="host-list-item"> <a href="#"> Olympics </a> </li>
+            <li class="host-list-item"><a href="#"> Resource Center </a></li>            
+        </ul>
+    </div>
+
+    <div class="footer-column">
+        <h4 class="footer-heading">SUPPORT</h4>
+        <ul class="support-list-items">
+            <li class="support-list-item"> <a href="#"> Help Center </a></li>
+            <li class="support-list-item"> <a href="#">Neighbourhood Support </a></li>
+            <!-- <li class="support-list-item"> <a href="#"> Responsible hosting </a></li>          -->
+            
+        </ul>
+    </div>
+   </div>
+    <hr class="footer-horizontal-copyright">
+    <div class="container-copyright">
+    <div class="copyright">&copy; 2020 Airbnb Inc.All rights reserved</div>
+    <div class="footer-terms-and-conditions">
+    <ul class="footer-terms">
+        <li class="footer-item"> <a href="#"> Privacy </a></li>
+        <li class="footer-item"> <a href="#"> Terms </a></li>
+        <li class="footer-item"> <a href="#"> Sitemap </a> </li>
+    </ul>
+    </div>
+    <!-- <div class="footer-currency">  
+        <a href="#">      
+            <span class="footer-icons-tag" onclick="languagePopUp()"> English(IN)</span>
+        </a>
+        <a href="#">
+            <span class="footer-icons-tag" onclick="currency_popUp()"> ₹ INR</span>      
+        </a>  
+        
+        
+        
+    
+    </div>  -->
+
+        <div class="footer-social-icons">
+            <a href="#!" class="footer-social-icons-item">
+                <i class="fab fa-twitter fa-2x"></i>
+            </a>
+            <a href="#!" class="footer-social-icons-item">
+                <i class="fab fa-facebook fa-2x"></i>
+            </a>
+            <a href="#!" class="footer-social-icons-item">
+                <i class="fab fa-instagram fa-2x"></i>
+            </a>       
+    </div>
+</div>
+</footer>
+
+<div id="main-menu-container">
+
+    <div id="icon-container">
+      
+        <div id="menu-airbnb-logo">
+           <div class="airbnb-logo-container">
+            <img src="/public/images/svgImages/airbnb-1.svg" alt="" 
+              class="logoAirbnbSvg">
+            </div>  
+            <div>
+             <p id="logo_definition"> <span class="logo-definition">explore</span></p>
+            </div>
+
+        </div>
+        <div id="menu-favorite-logo">
+            
+            <div class="favorite-container">
+            <img src="/public/images/svgImages/iconmonstr-heart-thin.svg" alt="" 
+              class="logofavoriteSvg" >
+            </div>  
+            <div>
+              <p id="favourite-definition"> <span class="logo-definition">saved</span></p>
+            </div>
+        </div>
+        <div id="menu-log-in-logo">
+            <div class="logIn-container">
+            <img src="/public/images/svgImages/login.svg" alt="" 
+              class="logoLogInSvg" >
+            </div>  
+            <div>
+              <p id="logIn-defintion"> <span class="logo-definition">Log in</span></p>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+ 
+<script src="https://kit.fontawesome.com/95c35769ee.js" crossorigin="anonymous"></script>
+</body>
+</html>
+
+<script src="/public/js/javascript.js"></script>
+<script src="/public/js/nav-toggle.js"></script>
+<script src="/public/js/menu_dropdown.js"></script>
