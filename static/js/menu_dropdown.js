@@ -2,7 +2,7 @@
     // console.log(menu_hover,'menu-hover')
 
     let para_heading = document.getElementsByClassName('paragraph-heading')
-    console.log(para_heading,'para heading')
+    // console.log(para_heading,'para heading')
 
     let btn_click = false
     let btn_definition = document.getElementsByClassName('button_def')

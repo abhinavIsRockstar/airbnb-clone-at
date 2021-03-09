@@ -10,6 +10,7 @@ console.log(__dirname,'dirname')
 
 // const bodyParser = require('body-parser');
 
+const port = process.env.PORT || 3000
 
 
 app.get('/', (req,res) =>{
@@ -19,6 +20,6 @@ app.get('/', (req,res) =>{
     // res.send('hello world');
 })
 
-app.listen('3000',() => {
+app.listen(port,() => {
     console.log('server started on port 3000');
 })

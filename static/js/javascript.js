@@ -53,7 +53,7 @@ let guest_container = document.getElementById("container-guest");
 
 function buttonPlus ( name ) {
       
-        console.log("name", name)
+        // console.log("name", name)
         // console.log("inside buttonPlus");
 
         if (name == "button-adults" ) {
@@ -65,13 +65,13 @@ function buttonPlus ( name ) {
             // console.log("inside buttonPlus if");
             let button_adults = document.getElementById("guest-button-adults");
            
-            console.log(adult_placeholder)
+         //   console.log(adult_placeholder)
             button_adults.innerText = ++adultValue + '+';
             total_guest_value = adultValue + childrenValue + infantsvalue
             document.getElementById("guests_input").value =  total_guest_value +"  " +adult_placeholder
         }
         else  {
-            console.log('16')
+            //console.log('16')
             document.getElementById("button_right").style.pointerEvents = "none"
             document.getElementById("button_right").style.background = "#ffffff"
             document.getElementById("button_right").style.borderColor = "rgba(0, 132, 137, 0.3)"
@@ -106,10 +106,10 @@ function buttonPlus ( name ) {
 
         else if( name == "button-infants") {
 
-            console.log('inside button infants')
+          //  console.log('inside button infants')
 
             if(infantsvalue < 5) {
-                console.log('inside if of button infants')
+              //  console.log('inside if of button infants')
                 // console.log("inside else if button-infants")
             let button_infants = document.getElementById("guest-button-infants-number");
             button_infants.innerText = ++infantsvalue + '+';
@@ -126,7 +126,7 @@ function buttonPlus ( name ) {
 
             else{
 
-                console.log('inside else of buttton infants')
+              //  console.log('inside else of buttton infants')
 
                 document.getElementById("button_right_infants").style.pointerEvents = "none"
                 document.getElementById("button_right_infants").style.background = "#ffffff"
@@ -206,15 +206,15 @@ function buttonMinus (name) {
 let container_languages = document.getElementById("container-languages")
 let lang_popUp = false
 
-console.log(body, 'bodyyy')
+//console.log(body, 'bodyyy')
 
 function languagePopUp () {
-        console.log('inside language pop up')
+      //  console.log('inside language pop up')
         
 
         if(!lang_popUp) {
             
-            console.log('inside if lang-pop up')
+          //  console.log('inside if lang-pop up')
             body.style.position = "fixed";
             body.style.overflow = "hidden"
             
@@ -224,7 +224,7 @@ function languagePopUp () {
         }
 
         else if( !lang_popUp ) {
-            console.log('inside else if lang pop up footer')
+          //  console.log('inside else if lang pop up footer')
             body.style.position = "fixed";
             body.style.overflow = "hidden"
             container_languages.style.display = "block"
@@ -249,7 +249,7 @@ let container_currency = document.getElementById("container-currency")
 
 function currency_popUp () {
 
-    console.log("inside currency popup")
+  //  console.log("inside currency popup")
 
     if(!currencyPopUp) {
         container_currency.style.display = "block"
@@ -268,7 +268,7 @@ let container_signUpPopUp = document.getElementById("sign-up-container")
 
 function signUp () {
 
-    console.log('inside signup')
+  //  console.log('inside signup')
 
     if(!signUpPopUp) {
         container_signUpPopUp.style.display = "block"
@@ -283,7 +283,7 @@ function signUp () {
 }
 
 function signUpMobile () {
-    console.log('inside signUpMobile signup')
+  //  console.log('inside signUpMobile signup')
 
     if(!signUpPopUp) {
         container_signUpPopUp.style.display = "block"
@@ -305,7 +305,7 @@ let container_logInPopUp = document.getElementById("log-in-container")
 
 function logIn () {
 
-    console.log('inside login')
+   // console.log('inside login')
 
     if(!logInPopUp) {
         container_logInPopUp.style.display = "block"
@@ -325,7 +325,7 @@ let container_helpPopUp = document.getElementById("help-container")
 
 function help () {
 
-    console.log('inside help')
+  //  console.log('inside help')
 
     if(!helpPopUp) {
         container_helpPopUp.style.display = "block"
@@ -343,28 +343,28 @@ button_close_help.addEventListener('click', helpBtnClose);
 
 
 function helpBtnClose () {
-    console.log('inside help btn close')
+   // console.log('inside help btn close')
     container_helpPopUp.style.display = "none"
 }
 
 button_close_signUp.addEventListener('click', signUpBtnClose)
 
 function signUpBtnClose () {
-    console.log('inside signup button close')
+   // console.log('inside signup button close')
     container_signUpPopUp.style.display = "none"
 }
 
 button_close_logIn.addEventListener('click', logInBtnClose)
 
 function logInBtnClose () {
-    console.log('inside login button close')
+   // console.log('inside login button close')
     container_logInPopUp.style.display = "none"
 }
 
 button_close_languagePopUp.addEventListener('click', languageBtnClose)
 
 function languageBtnClose () {
-    console.log('inside button lang close')
+   // console.log('inside button lang close')
     container_languages.style.display = "none"
     body.style.position = "unset"
     body.style.overflow = "unset"
@@ -375,7 +375,7 @@ button_close_currencyPopUp.addEventListener('click', currencyBtnClose)
 
 
 function currencyBtnClose () {
-    console.log('inside button currency close')
+   // console.log('inside button currency close')
     container_currency.style.display = "none"
 }
 
@@ -407,12 +407,12 @@ function currencyBtnClose () {
     // });
 
     let width = this.pageYOffset + 'px'
-    console.log(width,'width')  
+  //  console.log(width,'width')  
     let innerwidth = window.innerWidth;
-    console.log(innerwidth, 'innnner')
+  //  console.log(innerwidth, 'innnner')
 
     let innerHeightDemo = this.scrollY
-    console.log(innerHeightDemo,'innerHeightDemo')
+  //  console.log(innerHeightDemo,'innerHeightDemo')
     
 
 
